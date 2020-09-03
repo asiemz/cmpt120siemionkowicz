@@ -4,5 +4,6 @@
 
 def main():
     print("Hello, instructor!")
+    print("Goodbye!")
 
 main()

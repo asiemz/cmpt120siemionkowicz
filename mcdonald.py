@@ -1,6 +1,7 @@
 #mcdonald.py
 #prints lyrics to song "Old McDonald"
 
+# No need to ask. You had to do 5 animals.
 animal = input("What animal?: ")
 
 def sing():

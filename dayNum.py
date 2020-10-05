@@ -5,23 +5,18 @@
 
 def main():
 
-    print("Enter date in format (mm/dd/yyyy)")
+    month,day,year = input("Enter date in format (mm/dd/yyyy)").split('/')
 
-    month = float(input("What is the month? "))
-    day = float(input("What is the day? "))
-    year = float(input("What is the year? "))
-
+    month = int(month)
+    day = int(day)
+    year = int(year)
 
     dayNum = 31*(month-1) + day
     
     if month > 2:
-        dayNum = (4(month) + 23)//10
-
-    elif year % 4 ==0 and year % 100 ==0 and month >= 2 and day > 29:
-        dayNum = ((4(month) + 23)//10 )+1
-
-    else:
-        dayNum = 31*(month-1)+day
+        dayNum -= (4*month + 23)//10
+    if (year % 4 == 0 or year % 100 == 0) and not(year % 400 == 0) and month > 2:
+        dayNum += 1
 
     print("The day number is", dayNum)
 

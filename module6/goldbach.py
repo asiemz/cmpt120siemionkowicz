@@ -14,8 +14,8 @@ def main():
 
     number = int(input("Enter an even number: "))
 
-    fx = number/2 + 1
-    fy = number/2 - 1
+    fx = number//2 + 1
+    fy = number//2 - 1
 
     if number%2==0:
         while fx%2==0 and fy%2==0:

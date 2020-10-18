@@ -18,15 +18,15 @@ def syracuse(x):
 
     while x != 1:
         if x % 2 ==0:
-            x = x/2
+            x = x//2 # JA
 
             result.append(x)
 
-    else:
+        else:
 
-        x = 3 * x +1
+            x = 3 * x +1
 
-        result.append(x)
+            result.append(x)
 
     return result
 

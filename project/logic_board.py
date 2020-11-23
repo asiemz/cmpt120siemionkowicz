@@ -2,6 +2,7 @@
 
 from graphics import *
 from tkinter import *
+from graphic_gates import *
 
 
 
@@ -40,19 +41,19 @@ def nandGate():
 
     
 
-btn1 = Button(root,text = "and gate",command=picA)
+btn1 = Button(root,text = "and gate",command=andGate)
 btn1.pack()
 
-btn2 = Button(root,text = "or gate",command=picB)
+btn2 = Button(root,text = "or gate",command=orGate)
 btn2.pack()
 
-btn3 = Button(root,text = "not gate",command=picC)
+btn3 = Button(root,text = "not gate",command=notGate)
 btn3.pack()
 
-btn4 = Button(root,text = "xor gate",command=picD)
+btn4 = Button(root,text = "xor gate",command=xorGate)
 btn4.pack()
 
-btn5 = Button(root,text = "nand gate",command=picE)
+btn5 = Button(root,text = "nand gate",command=nandGate)
 btn5.pack()
 
 

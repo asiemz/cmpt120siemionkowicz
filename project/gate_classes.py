@@ -40,6 +40,7 @@ class And:
         self.p = Point
         self.a == a
         self.b == b
+        # The output DigitalValue should be stored also
 
     def setA(self):
         self.a = and_g(a)
